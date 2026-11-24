@@ -1,0 +1,71 @@
+{
+  "checks": [
+    {
+      "details": {
+        "free_gb": 9.97,
+        "min_free_gb": 1.0,
+        "path": ".",
+        "total_gb": 251.97,
+        "warn_free_gb": 2000000.0
+      },
+      "id": "disk",
+      "message": "9.97 GB free is below the 2000000.0 GB comfort threshold",
+      "status": "warn",
+      "title": "Disk space"
+    },
+    {
+      "details": {
+        "missing_recommended": [],
+        "missing_required": [
+          "DEVDOCTOR_DEMO_MISSING"
+        ],
+        "recommended": [],
+        "required": [
+          "DEVDOCTOR_DEMO_MISSING",
+          "PATH"
+        ]
+      },
+      "id": "env",
+      "message": "missing required: DEVDOCTOR_DEMO_MISSING",
+      "status": "fail",
+      "title": "Environment variables"
+    },
+    {
+      "details": {
+        "in_virtualenv": true,
+        "minimum": "3.99",
+        "version": "3.12.3"
+      },
+      "id": "python",
+      "message": "Python 3.12.3 is older than required 3.99",
+      "status": "fail",
+      "title": "Python version"
+    },
+    {
+      "details": {
+        "found": false,
+        "min_version": null,
+        "required": true
+      },
+      "id": "tool:definitely-not-installed",
+      "message": "required tool not found on PATH",
+      "status": "fail",
+      "title": "Tool: definitely-not-installed"
+    }
+  ],
+  "exit_code": 2,
+  "overall": "fail",
+  "platform": {
+    "machine": "x86_64",
+    "python_implementation": "CPython",
+    "system": "Linux"
+  },
+  "schema_version": 1,
+  "summary": {
+    "fail": 3,
+    "ok": 0,
+    "warn": 1
+  },
+  "tool": "devdoctor",
+  "tool_version": "0.1.0"
+}

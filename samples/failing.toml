@@ -1,0 +1,10 @@
+[python]
+min_version = "3.99"
+[disk]
+min_free_gb = 1
+warn_free_gb = 2000000
+[env]
+required = ["PATH", "DEVDOCTOR_DEMO_MISSING"]
+[[tools]]
+name = "definitely-not-installed"
+required = true

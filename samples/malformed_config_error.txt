@@ -1,0 +1,2 @@
+devdoctor: config error: samples/malformed.toml: invalid TOML: Expected ']' at the end of a table declaration (at line 1, column 6)
+devdoctor: config error: config file not found: nope.toml

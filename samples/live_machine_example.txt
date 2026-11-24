@@ -1,0 +1,111 @@
+devdoctor 0.1.0 - developer environment report
+platform: Linux x86_64, CPython
+------------------------------------------------------------
+[WARN] Disk space: 9.97 GB free is below the 10.0 GB comfort threshold
+[WARN] Environment variables: missing recommended: EDITOR
+[ OK ] Python version: Python 3.12.3 (>= 3.10)
+[WARN] Tool: docker: optional tool not found on PATH
+[ OK ] Tool: git: version 2.43.0
+[ OK ] Tool: node: version 22.23.5
+------------------------------------------------------------
+result: WARN  (3 ok, 3 warn, 0 fail)  exit code 1
+{
+  "checks": [
+    {
+      "details": {
+        "free_gb": 9.97,
+        "min_free_gb": 2.0,
+        "path": ".",
+        "total_gb": 251.97,
+        "warn_free_gb": 10.0
+      },
+      "id": "disk",
+      "message": "9.97 GB free is below the 10.0 GB comfort threshold",
+      "status": "warn",
+      "title": "Disk space"
+    },
+    {
+      "details": {
+        "missing_recommended": [
+          "EDITOR"
+        ],
+        "missing_required": [],
+        "recommended": [
+          "EDITOR"
+        ],
+        "required": [
+          "HOME",
+          "PATH"
+        ]
+      },
+      "id": "env",
+      "message": "missing recommended: EDITOR",
+      "status": "warn",
+      "title": "Environment variables"
+    },
+    {
+      "details": {
+        "in_virtualenv": true,
+        "minimum": "3.10",
+        "version": "3.12.3"
+      },
+      "id": "python",
+      "message": "Python 3.12.3 (>= 3.10)",
+      "status": "ok",
+      "title": "Python version"
+    },
+    {
+      "details": {
+        "found": false,
+        "min_version": null,
+        "required": false
+      },
+      "id": "tool:docker",
+      "message": "optional tool not found on PATH",
+      "status": "warn",
+      "title": "Tool: docker"
+    },
+    {
+      "details": {
+        "found": true,
+        "min_version": "2.30",
+        "path": "/usr/bin/git",
+        "required": true,
+        "version": "2.43.0"
+      },
+      "id": "tool:git",
+      "message": "version 2.43.0",
+      "status": "ok",
+      "title": "Tool: git"
+    },
+    {
+      "details": {
+        "found": true,
+        "min_version": "18.0",
+        "path": "/usr/bin/node",
+        "required": false,
+        "version": "22.23.5"
+      },
+      "id": "tool:node",
+      "message": "version 22.23.5",
+      "status": "ok",
+      "title": "Tool: node"
+    }
+  ],
+  "exit_code": 1,
+  "overall": "warn",
+  "platform": {
+    "machine": "x86_64",
+    "python_implementation": "CPython",
+    "system": "Linux"
+  },
+  "schema_version": 1,
+  "summary": {
+    "fail": 0,
+    "ok": 3,
+    "warn": 3
+  },
+  "tool": "devdoctor",
+  "tool_version": "0.1.0"
+}
+exit=1

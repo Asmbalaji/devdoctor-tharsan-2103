@@ -1,0 +1,9 @@
+devdoctor 0.1.0 - developer environment report
+platform: Linux x86_64, CPython
+------------------------------------------------------------
+[WARN] Disk space: 9.97 GB free is below the 2000000.0 GB comfort threshold
+[FAIL] Environment variables: missing required: DEVDOCTOR_DEMO_MISSING
+[FAIL] Python version: Python 3.12.3 is older than required 3.99
+[FAIL] Tool: definitely-not-installed: required tool not found on PATH
+------------------------------------------------------------
+result: FAIL  (0 ok, 1 warn, 3 fail)  exit code 2
